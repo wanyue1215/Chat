@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67728A7A1D0FE5F50006C90B /* mongoClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A781D0FE5F50006C90B /* mongoClient.c */; };
+		67728A801D0FE6400006C90B /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A7D1D0FE6400006C90B /* cJSON.c */; };
+		67728A811D0FE6400006C90B /* cJSON_Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A7F1D0FE6400006C90B /* cJSON_Utils.c */; };
+		67728A8B1D0FE9240006C90B /* Marcos.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A891D0FE9240006C90B /* Marcos.c */; };
+		67728A8E1D0FE9E40006C90B /* JSONDefine.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A8C1D0FE9E40006C90B /* JSONDefine.c */; };
+		67728AA61D0FEE2C0006C90B /* libbson-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67728AA31D0FEE2C0006C90B /* libbson-1.0.0.dylib */; };
+		67728AA71D0FEE2C0006C90B /* libmongoc-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67728AA41D0FEE2C0006C90B /* libmongoc-1.0.0.dylib */; };
+		67728AA81D0FEE2C0006C90B /* libmongoc-priv.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67728AA51D0FEE2C0006C90B /* libmongoc-priv.0.dylib */; };
+		67728AAD1D0FF5C30006C90B /* ChatLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728AAB1D0FF5C30006C90B /* ChatLog.c */; };
+		67728AAE1D0FF5C30006C90B /* ChatLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728AAB1D0FF5C30006C90B /* ChatLog.c */; };
+		67728AAF1D0FF5C30006C90B /* ChatLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728AAB1D0FF5C30006C90B /* ChatLog.c */; };
 		67CE00021D0562A40023ADB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CE00011D0562A40023ADB8 /* ViewController.m */; };
 		67CE00041D0562A40023ADB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CE00031D0562A40023ADB8 /* Assets.xcassets */; };
 		67CE00071D0562A40023ADB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CE00051D0562A40023ADB8 /* Main.storyboard */; };
@@ -54,6 +65,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67728A781D0FE5F50006C90B /* mongoClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoClient.c; sourceTree = "<group>"; };
+		67728A791D0FE5F50006C90B /* mongoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoClient.h; sourceTree = "<group>"; };
+		67728A7C1D0FE6400006C90B /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
+		67728A7D1D0FE6400006C90B /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		67728A7E1D0FE6400006C90B /* cJSON_Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON_Utils.h; sourceTree = "<group>"; };
+		67728A7F1D0FE6400006C90B /* cJSON_Utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON_Utils.c; sourceTree = "<group>"; };
+		67728A891D0FE9240006C90B /* Marcos.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Marcos.c; sourceTree = "<group>"; };
+		67728A8A1D0FE9240006C90B /* Marcos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Marcos.h; sourceTree = "<group>"; };
+		67728A8C1D0FE9E40006C90B /* JSONDefine.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JSONDefine.c; sourceTree = "<group>"; };
+		67728A8D1D0FE9E40006C90B /* JSONDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONDefine.h; sourceTree = "<group>"; };
+		67728AA31D0FEE2C0006C90B /* libbson-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libbson-1.0.0.dylib"; sourceTree = "<group>"; };
+		67728AA41D0FEE2C0006C90B /* libmongoc-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libmongoc-1.0.0.dylib"; sourceTree = "<group>"; };
+		67728AA51D0FEE2C0006C90B /* libmongoc-priv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libmongoc-priv.0.dylib"; sourceTree = "<group>"; };
+		67728AAB1D0FF5C30006C90B /* ChatLog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ChatLog.c; sourceTree = "<group>"; };
+		67728AAC1D0FF5C30006C90B /* ChatLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatLog.h; sourceTree = "<group>"; };
 		67CE00001D0562A40023ADB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67CE00011D0562A40023ADB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		67CE00031D0562A40023ADB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -136,12 +162,81 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67728AA61D0FEE2C0006C90B /* libbson-1.0.0.dylib in Frameworks */,
+				67728AA71D0FEE2C0006C90B /* libmongoc-1.0.0.dylib in Frameworks */,
+				67728AA81D0FEE2C0006C90B /* libmongoc-priv.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67728A6F1D0FE2950006C90B /* MongoClient */ = {
+			isa = PBXGroup;
+			children = (
+				67728A781D0FE5F50006C90B /* mongoClient.c */,
+				67728A791D0FE5F50006C90B /* mongoClient.h */,
+			);
+			name = MongoClient;
+			sourceTree = "<group>";
+		};
+		67728A771D0FE5C90006C90B /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				67CE001B1D05635D0023ADB8 /* Server.c */,
+				67CE001C1D05635D0023ADB8 /* Server.h */,
+			);
+			name = Server;
+			sourceTree = "<group>";
+		};
+		67728A7B1D0FE6370006C90B /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				67728A7C1D0FE6400006C90B /* cJSON.h */,
+				67728A7D1D0FE6400006C90B /* cJSON.c */,
+				67728A7E1D0FE6400006C90B /* cJSON_Utils.h */,
+				67728A7F1D0FE6400006C90B /* cJSON_Utils.c */,
+			);
+			name = Json;
+			sourceTree = "<group>";
+		};
+		67728A841D0FE8D80006C90B /* exlibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = exlibs;
+			sourceTree = "<group>";
+		};
+		67728A881D0FE9110006C90B /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				67728A891D0FE9240006C90B /* Marcos.c */,
+				67728A8A1D0FE9240006C90B /* Marcos.h */,
+				67728A8C1D0FE9E40006C90B /* JSONDefine.c */,
+				67728A8D1D0FE9E40006C90B /* JSONDefine.h */,
+			);
+			name = Define;
+			sourceTree = "<group>";
+		};
+		67728A9C1D0FED870006C90B /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				67728AA31D0FEE2C0006C90B /* libbson-1.0.0.dylib */,
+				67728AA41D0FEE2C0006C90B /* libmongoc-1.0.0.dylib */,
+				67728AA51D0FEE2C0006C90B /* libmongoc-priv.0.dylib */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		67728AAA1D0FF5AF0006C90B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				67728AAB1D0FF5C30006C90B /* ChatLog.c */,
+				67728AAC1D0FF5C30006C90B /* ChatLog.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		67CE00101D0562A40023ADB8 /* ServerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,8 +249,10 @@
 		67CE001A1D05634C0023ADB8 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				67CE001B1D05635D0023ADB8 /* Server.c */,
-				67CE001C1D05635D0023ADB8 /* Server.h */,
+				67728A881D0FE9110006C90B /* Define */,
+				67728A7B1D0FE6370006C90B /* Json */,
+				67728A771D0FE5C90006C90B /* Server */,
+				67728A6F1D0FE2950006C90B /* MongoClient */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -205,6 +302,7 @@
 		67CEFFC61D05624D0023ADB8 = {
 			isa = PBXGroup;
 			children = (
+				67728AAA1D0FF5AF0006C90B /* Common */,
 				67CEFFD11D05624D0023ADB8 /* Chat */,
 				67CEFFE81D05624E0023ADB8 /* ChatTests */,
 				67CEFFF91D0562A40023ADB8 /* Server */,
@@ -263,6 +361,8 @@
 		67CEFFF91D0562A40023ADB8 /* Server */ = {
 			isa = PBXGroup;
 			children = (
+				67728A9C1D0FED870006C90B /* libs */,
+				67728A841D0FE8D80006C90B /* exlibs */,
 				67CE001A1D05634C0023ADB8 /* src */,
 				67CEFFFA1D0562A40023ADB8 /* AppDelegate.h */,
 				67CEFFFB1D0562A40023ADB8 /* AppDelegate.m */,
@@ -512,6 +612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CE00471D0565180023ADB8 /* client.c in Sources */,
+				67728AAF1D0FF5C30006C90B /* ChatLog.c in Sources */,
 				67CE002C1D0564FA0023ADB8 /* ViewController.m in Sources */,
 				67CE00291D0564FA0023ADB8 /* main.m in Sources */,
 				67CE00261D0564FA0023ADB8 /* AppDelegate.m in Sources */,
@@ -530,6 +631,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67728AAD1D0FF5C30006C90B /* ChatLog.c in Sources */,
 				67CEFFDA1D05624D0023ADB8 /* ViewController.m in Sources */,
 				67CEFFD71D05624D0023ADB8 /* main.m in Sources */,
 				67CEFFD41D05624D0023ADB8 /* AppDelegate.m in Sources */,
@@ -549,8 +651,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CE001D1D05635D0023ADB8 /* Server.c in Sources */,
+				67728A7A1D0FE5F50006C90B /* mongoClient.c in Sources */,
 				67CE00021D0562A40023ADB8 /* ViewController.m in Sources */,
+				67728A801D0FE6400006C90B /* cJSON.c in Sources */,
+				67728A8B1D0FE9240006C90B /* Marcos.c in Sources */,
+				67728A8E1D0FE9E40006C90B /* JSONDefine.c in Sources */,
+				67728AAE1D0FF5C30006C90B /* ChatLog.c in Sources */,
 				67CEFFFF1D0562A40023ADB8 /* main.m in Sources */,
+				67728A811D0FE6400006C90B /* cJSON_Utils.c in Sources */,
 				67CEFFFC1D0562A40023ADB8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,8 +716,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/libbson-1.0",
+					"/usr/local/include/libmongoc-1.0",
+				);
 				INFOPLIST_FILE = Server/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Server/libs";
 				PRODUCT_BUNDLE_IDENTIFIER = yuewan.Server;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -620,8 +734,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = (
+					"/usr/local/include/libbson-1.0",
+					"/usr/local/include/libmongoc-1.0",
+				);
 				INFOPLIST_FILE = Server/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/Server/libs";
 				PRODUCT_BUNDLE_IDENTIFIER = yuewan.Server;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -844,6 +964,7 @@
 				67CE00151D0562A40023ADB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CE00191D0562A40023ADB8 /* Build configuration list for PBXNativeTarget "ServerTests" */ = {
 			isa = XCConfigurationList;
@@ -852,6 +973,7 @@
 				67CE00171D0562A40023ADB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CE003E1D0564FA0023ADB8 /* Build configuration list for PBXNativeTarget "Client" */ = {
 			isa = XCConfigurationList;
@@ -860,6 +982,7 @@
 				67CE00401D0564FA0023ADB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CE00411D0564FA0023ADB8 /* Build configuration list for PBXNativeTarget "ClientTests" */ = {
 			isa = XCConfigurationList;
@@ -868,6 +991,7 @@
 				67CE00431D0564FA0023ADB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		67CEFFCA1D05624D0023ADB8 /* Build configuration list for PBXProject "Chat" */ = {
 			isa = XCConfigurationList;

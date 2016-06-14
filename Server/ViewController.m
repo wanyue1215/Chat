@@ -8,16 +8,31 @@
 
 #import "ViewController.h"
 #import "Server.h"
+#import "mongoClient.h"
 
 @implementation ViewController
 
 - (IBAction)buttonTouched:(id)sender {
-    NSLog(@"%s","---------------------");
-    int i = openServer();
-    printf("----------------");
-    if (i!=0){
-        NSLog(@"%s","开启出错！！！");
+    
+    
+    int ret = 0;
+    
+    ret = connect_db();
+    if (ret != 0) {
+        NSLog(@"%s","------------- mongoDb open fail ------------");
+        return;
     }
+    
+    ret  = openServer();
+    if (ret != 0) {
+        NSLog(@"%s","------------- socketServer open fail ------------");
+        return;
+    }
+    
+    printf("----------------");
+//    if (i!=0){
+//        NSLog(@"%s","开启出错！！！");
+//    }
 }
 
 - (void)viewDidLoad {
@@ -28,7 +43,7 @@
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
-
+    
     // Update the view, if already loaded.
 }
 

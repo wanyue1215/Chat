@@ -20,7 +20,6 @@ int openServer()
     struct addrinfo hints, *res;
     int sockfd;
     
-    
     memset(&hints, 0, sizeof(hints));
     hints.ai_family = AF_UNSPEC;
     hints.ai_socktype = SOCK_STREAM;
