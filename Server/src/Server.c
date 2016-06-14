@@ -16,7 +16,7 @@ void *get_in_addr(struct sockaddr *sa);
 int openServer()
 {
     int ret = 0;
-    printf("%s","----------- server starting-----------");
+    printf("%s","----------- server starting-----------\n");
     struct addrinfo hints, *res;
     int sockfd;
     
