@@ -15,4 +15,6 @@
 #include <arpa/inet.h>
 #include <string.h>
 
+int cltSocketInit();
+
 #endif /* client_h */

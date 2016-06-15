@@ -9,3 +9,16 @@
 #include "client.h"
 
 #define MYPORT "3490"  // the port users will be connecting to
+
+int cltSocketInit()
+{
+    
+    
+    return 0;
+};
+
+
+void connect_socket()
+{
+
+};
