@@ -14,7 +14,21 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <string.h>
+#include "ChatLog.h"
+/**
+ 初始化socket
+ 
+ - returns: <#return value description#>
+ */
+int initSocket();
 
-int cltSocketInit();
+/**
+ *  发送消息
+ *
+ *  @param msg 消息字符串
+ *
+ *  @return 发送状态
+ */
+int sendMsg(char * msg);
 
 #endif /* client_h */
