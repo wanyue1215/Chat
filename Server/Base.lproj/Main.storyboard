@@ -674,10 +674,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fh4-wT-4BD">
-                                <rect key="frame" x="193" y="143" width="66" height="32"/>
-                                <buttonCell key="cell" type="push" title="测试" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ke6-5b-857">
+                                <rect key="frame" x="199" y="141" width="100" height="43"/>
+                                <buttonCell key="cell" type="smallSquare" title="开启服务" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ke6-5b-857">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
                                     <action selector="buttonTouched:" target="XfG-lQ-9wD" id="diE-lK-nXK"/>
@@ -685,6 +685,9 @@
                             </button>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="btn" destination="fh4-wT-4BD" id="y5H-eD-kLg"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>

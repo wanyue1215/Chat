@@ -15,5 +15,10 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <string.h>
+#include "ChatLog.h"
+
+int openServer();
+
+void closeSocketSever();
 
 #endif /* Server_h */

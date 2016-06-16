@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67560CAB1D12578200FB9AFA /* libhiredis.0.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67560CAA1D12578200FB9AFA /* libhiredis.0.13.dylib */; };
+		67560CAF1D126F7F00FB9AFA /* redisClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 67560CAD1D126F7F00FB9AFA /* redisClient.c */; };
 		67728A7A1D0FE5F50006C90B /* mongoClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A781D0FE5F50006C90B /* mongoClient.c */; };
 		67728A801D0FE6400006C90B /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A7D1D0FE6400006C90B /* cJSON.c */; };
 		67728A811D0FE6400006C90B /* cJSON_Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A7F1D0FE6400006C90B /* cJSON_Utils.c */; };
@@ -65,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		67560CAA1D12578200FB9AFA /* libhiredis.0.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhiredis.0.13.dylib; sourceTree = "<group>"; };
+		67560CAD1D126F7F00FB9AFA /* redisClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = redisClient.c; sourceTree = "<group>"; };
+		67560CAE1D126F7F00FB9AFA /* redisClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redisClient.h; sourceTree = "<group>"; };
 		67728A781D0FE5F50006C90B /* mongoClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoClient.c; sourceTree = "<group>"; };
 		67728A791D0FE5F50006C90B /* mongoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoClient.h; sourceTree = "<group>"; };
 		67728A7C1D0FE6400006C90B /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
@@ -164,6 +169,7 @@
 			files = (
 				67728AA61D0FEE2C0006C90B /* libbson-1.0.0.dylib in Frameworks */,
 				67728AA71D0FEE2C0006C90B /* libmongoc-1.0.0.dylib in Frameworks */,
+				67560CAB1D12578200FB9AFA /* libhiredis.0.13.dylib in Frameworks */,
 				67728AA81D0FEE2C0006C90B /* libmongoc-priv.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +177,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67560CAC1D126F6F00FB9AFA /* redis */ = {
+			isa = PBXGroup;
+			children = (
+				67560CAD1D126F7F00FB9AFA /* redisClient.c */,
+				67560CAE1D126F7F00FB9AFA /* redisClient.h */,
+			);
+			name = redis;
+			sourceTree = "<group>";
+		};
 		67728A6F1D0FE2950006C90B /* MongoClient */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +239,7 @@
 				67728AA31D0FEE2C0006C90B /* libbson-1.0.0.dylib */,
 				67728AA41D0FEE2C0006C90B /* libmongoc-1.0.0.dylib */,
 				67728AA51D0FEE2C0006C90B /* libmongoc-priv.0.dylib */,
+				67560CAA1D12578200FB9AFA /* libhiredis.0.13.dylib */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -249,6 +265,7 @@
 		67CE001A1D05634C0023ADB8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				67560CAC1D126F6F00FB9AFA /* redis */,
 				67728A881D0FE9110006C90B /* Define */,
 				67728A7B1D0FE6370006C90B /* Json */,
 				67728A771D0FE5C90006C90B /* Server */,
@@ -651,6 +668,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CE001D1D05635D0023ADB8 /* Server.c in Sources */,
+				67560CAF1D126F7F00FB9AFA /* redisClient.c in Sources */,
 				67728A7A1D0FE5F50006C90B /* mongoClient.c in Sources */,
 				67CE00021D0562A40023ADB8 /* ViewController.m in Sources */,
 				67728A801D0FE6400006C90B /* cJSON.c in Sources */,
@@ -720,6 +738,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/include/libbson-1.0",
 					"/usr/local/include/libmongoc-1.0",
+					/usr/local/include/hiredis,
 				);
 				INFOPLIST_FILE = Server/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -738,6 +757,7 @@
 				HEADER_SEARCH_PATHS = (
 					"/usr/local/include/libbson-1.0",
 					"/usr/local/include/libmongoc-1.0",
+					/usr/local/include/hiredis,
 				);
 				INFOPLIST_FILE = Server/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
