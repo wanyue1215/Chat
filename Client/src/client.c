@@ -24,12 +24,12 @@ int cltSocketInit()
     memset(&hints, 0, sizeof(hints));
     hints.ai_family     =   PF_UNSPEC;//AF_UNSPEC;
     hints.ai_socktype   =   SOCK_STREAM;
-    hints.ai_flags      =   AI_PASSIVE;
+//    hints.ai_flags      =   AI_PASSIVE;
     getaddrinfo(HOST_IP, MYPORT, &hints, &res);
     
     sock = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
     if (sock == -1) {
-        CHAT_LOG(   FILENAME, 35, LogLevel[2], 1, "init socket error!");
+        CHAT_LOG( FILENAME, 32, LogLevel[2], 1, "init socket error!");
         return -1;
     }
     
@@ -37,22 +37,32 @@ int cltSocketInit()
 };
 
 //连接socket
-void connect_socket()
+
+int connect_socket()
 {
-    int ret = connect(sock, res->ai_addr, sizeof(res->ai_addr));
+    int ret = connect(sock, res->ai_addr, res->ai_addrlen);
     if (ret < 0) {
-        CHAT_LOG(FILENAME, 40, LogLevel[2], 1, "socket connect fail!");
+        CHAT_LOG(FILENAME, 44, LogLevel[2], 1, "socket connect fail!");
+        return ret;
     }
+    return 0;
 };
 
 int initSocket()
 {
-    int ret = cltSocketInit();
+    int             ret;
+    if (sock>0){
+        close(sock);
+    }
+    ret = cltSocketInit();
     if (ret == -1) {
         return -1;
     }
-    connect_socket();
-    
+    //连接失败
+    if((ret = connect_socket())<0){
+        return ret;
+    }
+
     return 0;
 };
 

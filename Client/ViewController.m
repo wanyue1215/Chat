@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #include "ChatLog.h"
-
+#include "client.h"
 
 @implementation ViewController
 - (IBAction)btnClick:(id)sender {
@@ -24,7 +24,10 @@
     alert.alertStyle = NSWarningAlertStyle;
     [alert addButtonWithTitle:@"测试"];
     
-    CHAT_LOG(t, i, level, status, t , "x" , "xxxxxssd" );
+    if(initSocket() ==0 ){
+        NSLog(@"%@",@"连接成功");
+    }
+    //CHAT_LOG(t, i, level, status, t , "x" , "xxxxxssd" );
 }
 
 - (void)viewDidLoad {
@@ -35,7 +38,7 @@
     int level = 2;
     int status = 1;
     
-    CHAT_LOG(t, i, level, status, t , "x" , "xxxxxssd" );
+    //CHAT_LOG(t, i, level, status, t , "x" , "xxxxxssd" );
     // Do any additional setup after loading the view.
     
 }
