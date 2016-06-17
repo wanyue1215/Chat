@@ -29,6 +29,6 @@ int initSocket();
  *
  *  @return 发送状态
  */
-int sendMsg(char * msg);
+int sendMsg(const char * msg);
 
 #endif /* client_h */

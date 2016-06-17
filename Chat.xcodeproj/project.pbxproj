@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		645EC33058730981C98CFD73 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6AEDEAC6B5B60104CF2430C /* libPods.a */; };
+		67500E591D138A5300BF1B52 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 67500E581D138A5300BF1B52 /* NetWork.m */; };
+		67500E5A1D138A5700BF1B52 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 67500E581D138A5300BF1B52 /* NetWork.m */; };
+		67500E5B1D138A5800BF1B52 /* NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 67500E581D138A5300BF1B52 /* NetWork.m */; };
+		67500E611D13AE4800BF1B52 /* Lang_ZH.m in Sources */ = {isa = PBXBuildFile; fileRef = 67500E601D13AE4800BF1B52 /* Lang_ZH.m */; };
+		67500E621D13AE4800BF1B52 /* Lang_ZH.m in Sources */ = {isa = PBXBuildFile; fileRef = 67500E601D13AE4800BF1B52 /* Lang_ZH.m */; };
+		67500E631D13AE4800BF1B52 /* Lang_ZH.m in Sources */ = {isa = PBXBuildFile; fileRef = 67500E601D13AE4800BF1B52 /* Lang_ZH.m */; };
 		67560CAB1D12578200FB9AFA /* libhiredis.0.13.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 67560CAA1D12578200FB9AFA /* libhiredis.0.13.dylib */; };
 		67560CAF1D126F7F00FB9AFA /* redisClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 67560CAD1D126F7F00FB9AFA /* redisClient.c */; };
+		67560CB61D128F0B00FB9AFA /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 67560CB51D128F0B00FB9AFA /* Login.m */; };
+		67560CBA1D128F3400FB9AFA /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 67560CB91D128F3400FB9AFA /* Login.m */; };
 		67728A7A1D0FE5F50006C90B /* mongoClient.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A781D0FE5F50006C90B /* mongoClient.c */; };
 		67728A801D0FE6400006C90B /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A7D1D0FE6400006C90B /* cJSON.c */; };
 		67728A811D0FE6400006C90B /* cJSON_Utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728A7F1D0FE6400006C90B /* cJSON_Utils.c */; };
@@ -20,6 +29,27 @@
 		67728AAD1D0FF5C30006C90B /* ChatLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728AAB1D0FF5C30006C90B /* ChatLog.c */; };
 		67728AAE1D0FF5C30006C90B /* ChatLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728AAB1D0FF5C30006C90B /* ChatLog.c */; };
 		67728AAF1D0FF5C30006C90B /* ChatLog.c in Sources */ = {isa = PBXBuildFile; fileRef = 67728AAB1D0FF5C30006C90B /* ChatLog.c */; };
+		677648D91D129A390070147A /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648D81D129A390070147A /* Common.m */; };
+		677648DA1D129A390070147A /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648D81D129A390070147A /* Common.m */; };
+		677648DB1D129A390070147A /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648D81D129A390070147A /* Common.m */; };
+		677648EA1D1389260070147A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648DE1D1389260070147A /* AFHTTPSessionManager.m */; };
+		677648EB1D1389260070147A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648DE1D1389260070147A /* AFHTTPSessionManager.m */; };
+		677648EC1D1389260070147A /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648DE1D1389260070147A /* AFHTTPSessionManager.m */; };
+		677648ED1D1389260070147A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E11D1389260070147A /* AFNetworkReachabilityManager.m */; };
+		677648EE1D1389260070147A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E11D1389260070147A /* AFNetworkReachabilityManager.m */; };
+		677648EF1D1389260070147A /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E11D1389260070147A /* AFNetworkReachabilityManager.m */; };
+		677648F01D1389260070147A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E31D1389260070147A /* AFSecurityPolicy.m */; };
+		677648F11D1389260070147A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E31D1389260070147A /* AFSecurityPolicy.m */; };
+		677648F21D1389260070147A /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E31D1389260070147A /* AFSecurityPolicy.m */; };
+		677648F31D1389260070147A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E51D1389260070147A /* AFURLRequestSerialization.m */; };
+		677648F41D1389260070147A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E51D1389260070147A /* AFURLRequestSerialization.m */; };
+		677648F51D1389260070147A /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E51D1389260070147A /* AFURLRequestSerialization.m */; };
+		677648F61D1389260070147A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E71D1389260070147A /* AFURLResponseSerialization.m */; };
+		677648F71D1389260070147A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E71D1389260070147A /* AFURLResponseSerialization.m */; };
+		677648F81D1389260070147A /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E71D1389260070147A /* AFURLResponseSerialization.m */; };
+		677648F91D1389260070147A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E91D1389260070147A /* AFURLSessionManager.m */; };
+		677648FA1D1389260070147A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E91D1389260070147A /* AFURLSessionManager.m */; };
+		677648FB1D1389260070147A /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 677648E91D1389260070147A /* AFURLSessionManager.m */; };
 		67CE00021D0562A40023ADB8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67CE00011D0562A40023ADB8 /* ViewController.m */; };
 		67CE00041D0562A40023ADB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67CE00031D0562A40023ADB8 /* Assets.xcassets */; };
 		67CE00071D0562A40023ADB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67CE00051D0562A40023ADB8 /* Main.storyboard */; };
@@ -67,9 +97,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		25416EEADE2094041E65660C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2E21900651B8EDA47F971D2E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		67500E571D138A5300BF1B52 /* NetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWork.h; sourceTree = "<group>"; };
+		67500E581D138A5300BF1B52 /* NetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWork.m; sourceTree = "<group>"; };
+		67500E5F1D13AE4800BF1B52 /* Lang_ZH.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lang_ZH.h; sourceTree = "<group>"; };
+		67500E601D13AE4800BF1B52 /* Lang_ZH.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lang_ZH.m; sourceTree = "<group>"; };
 		67560CAA1D12578200FB9AFA /* libhiredis.0.13.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libhiredis.0.13.dylib; sourceTree = "<group>"; };
 		67560CAD1D126F7F00FB9AFA /* redisClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = redisClient.c; sourceTree = "<group>"; };
 		67560CAE1D126F7F00FB9AFA /* redisClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redisClient.h; sourceTree = "<group>"; };
+		67560CB41D128F0B00FB9AFA /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		67560CB51D128F0B00FB9AFA /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		67560CB81D128F3400FB9AFA /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		67560CB91D128F3400FB9AFA /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		67728A781D0FE5F50006C90B /* mongoClient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongoClient.c; sourceTree = "<group>"; };
 		67728A791D0FE5F50006C90B /* mongoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongoClient.h; sourceTree = "<group>"; };
 		67728A7C1D0FE6400006C90B /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
@@ -85,6 +125,21 @@
 		67728AA51D0FEE2C0006C90B /* libmongoc-priv.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libmongoc-priv.0.dylib"; sourceTree = "<group>"; };
 		67728AAB1D0FF5C30006C90B /* ChatLog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ChatLog.c; sourceTree = "<group>"; };
 		67728AAC1D0FF5C30006C90B /* ChatLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatLog.h; sourceTree = "<group>"; };
+		677648D71D129A390070147A /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		677648D81D129A390070147A /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
+		677648DD1D1389260070147A /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		677648DE1D1389260070147A /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		677648DF1D1389260070147A /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		677648E01D1389260070147A /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		677648E11D1389260070147A /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		677648E21D1389260070147A /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		677648E31D1389260070147A /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		677648E41D1389260070147A /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		677648E51D1389260070147A /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		677648E61D1389260070147A /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		677648E71D1389260070147A /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		677648E81D1389260070147A /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		677648E91D1389260070147A /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		67CE00001D0562A40023ADB8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		67CE00011D0562A40023ADB8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		67CE00031D0562A40023ADB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -125,6 +180,7 @@
 		67CEFFFA1D0562A40023ADB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		67CEFFFB1D0562A40023ADB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		67CEFFFE1D0562A40023ADB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6AEDEAC6B5B60104CF2430C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +209,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				645EC33058730981C98CFD73 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +234,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67500E541D138A1300BF1B52 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				677648DC1D1389260070147A /* AFNetworking */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		67500E561D138A3B00BF1B52 /* netWork */ = {
+			isa = PBXGroup;
+			children = (
+				67500E571D138A5300BF1B52 /* NetWork.h */,
+				67500E581D138A5300BF1B52 /* NetWork.m */,
+			);
+			name = netWork;
+			sourceTree = "<group>";
+		};
 		67560CAC1D126F6F00FB9AFA /* redis */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +258,24 @@
 				67560CAE1D126F7F00FB9AFA /* redisClient.h */,
 			);
 			name = redis;
+			sourceTree = "<group>";
+		};
+		67560CB01D128E0500FB9AFA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				67560CB41D128F0B00FB9AFA /* Login.h */,
+				67560CB51D128F0B00FB9AFA /* Login.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		67560CB71D128F2400FB9AFA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				67560CB81D128F3400FB9AFA /* Login.h */,
+				67560CB91D128F3400FB9AFA /* Login.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		67728A6F1D0FE2950006C90B /* MongoClient */ = {
@@ -247,10 +339,44 @@
 		67728AAA1D0FF5AF0006C90B /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				67500E541D138A1300BF1B52 /* lib */,
+				67500E561D138A3B00BF1B52 /* netWork */,
+				677648D51D129A0E0070147A /* ChatLog */,
+				677648D71D129A390070147A /* Common.h */,
+				677648D81D129A390070147A /* Common.m */,
+				67500E5F1D13AE4800BF1B52 /* Lang_ZH.h */,
+				67500E601D13AE4800BF1B52 /* Lang_ZH.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		677648D51D129A0E0070147A /* ChatLog */ = {
+			isa = PBXGroup;
+			children = (
 				67728AAB1D0FF5C30006C90B /* ChatLog.c */,
 				67728AAC1D0FF5C30006C90B /* ChatLog.h */,
 			);
-			path = Common;
+			name = ChatLog;
+			sourceTree = "<group>";
+		};
+		677648DC1D1389260070147A /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				677648DD1D1389260070147A /* AFHTTPSessionManager.h */,
+				677648DE1D1389260070147A /* AFHTTPSessionManager.m */,
+				677648DF1D1389260070147A /* AFNetworking.h */,
+				677648E01D1389260070147A /* AFNetworkReachabilityManager.h */,
+				677648E11D1389260070147A /* AFNetworkReachabilityManager.m */,
+				677648E21D1389260070147A /* AFSecurityPolicy.h */,
+				677648E31D1389260070147A /* AFSecurityPolicy.m */,
+				677648E41D1389260070147A /* AFURLRequestSerialization.h */,
+				677648E51D1389260070147A /* AFURLRequestSerialization.m */,
+				677648E61D1389260070147A /* AFURLResponseSerialization.h */,
+				677648E71D1389260070147A /* AFURLResponseSerialization.m */,
+				677648E81D1389260070147A /* AFURLSessionManager.h */,
+				677648E91D1389260070147A /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
 			sourceTree = "<group>";
 		};
 		67CE00101D0562A40023ADB8 /* ServerTests */ = {
@@ -265,6 +391,7 @@
 		67CE001A1D05634C0023ADB8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				67560CB01D128E0500FB9AFA /* model */,
 				67560CAC1D126F6F00FB9AFA /* redis */,
 				67728A881D0FE9110006C90B /* Define */,
 				67728A7B1D0FE6370006C90B /* Json */,
@@ -310,6 +437,7 @@
 		67CE00441D05650C0023ADB8 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				67560CB71D128F2400FB9AFA /* Model */,
 				67CE00451D0565180023ADB8 /* client.c */,
 				67CE00461D0565180023ADB8 /* client.h */,
 			);
@@ -327,6 +455,8 @@
 				67CE00231D0564FA0023ADB8 /* Client */,
 				67CE003A1D0564FA0023ADB8 /* ClientTests */,
 				67CEFFD01D05624D0023ADB8 /* Products */,
+				BF631645E447E00AC179DE75 /* Pods */,
+				862DC2FD9AF3CAAB920658DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -401,6 +531,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		862DC2FD9AF3CAAB920658DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6AEDEAC6B5B60104CF2430C /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF631645E447E00AC179DE75 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E21900651B8EDA47F971D2E /* Pods.debug.xcconfig */,
+				25416EEADE2094041E65660C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -461,9 +608,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 67CEFFEE1D05624E0023ADB8 /* Build configuration list for PBXNativeTarget "Chat" */;
 			buildPhases = (
+				EFED3E51175611CD5A391F69 /* Check Pods Manifest.lock */,
 				67CEFFCB1D05624D0023ADB8 /* Sources */,
 				67CEFFCC1D05624D0023ADB8 /* Frameworks */,
 				67CEFFCD1D05624D0023ADB8 /* Resources */,
+				F7E19789A4A40C0EEF489981 /* Embed Pods Frameworks */,
+				B09FDCF04F6546C449893CE7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -615,6 +765,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B09FDCF04F6546C449893CE7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFED3E51175611CD5A391F69 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F7E19789A4A40C0EEF489981 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		67CE00091D0562A40023ADB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -629,10 +827,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				67CE00471D0565180023ADB8 /* client.c in Sources */,
+				677648EF1D1389260070147A /* AFNetworkReachabilityManager.m in Sources */,
 				67728AAF1D0FF5C30006C90B /* ChatLog.c in Sources */,
 				67CE002C1D0564FA0023ADB8 /* ViewController.m in Sources */,
+				67560CBA1D128F3400FB9AFA /* Login.m in Sources */,
 				67CE00291D0564FA0023ADB8 /* main.m in Sources */,
+				677648F21D1389260070147A /* AFSecurityPolicy.m in Sources */,
+				677648F51D1389260070147A /* AFURLRequestSerialization.m in Sources */,
+				67500E5A1D138A5700BF1B52 /* NetWork.m in Sources */,
+				67500E631D13AE4800BF1B52 /* Lang_ZH.m in Sources */,
 				67CE00261D0564FA0023ADB8 /* AppDelegate.m in Sources */,
+				677648DB1D129A390070147A /* Common.m in Sources */,
+				677648F81D1389260070147A /* AFURLResponseSerialization.m in Sources */,
+				677648FB1D1389260070147A /* AFURLSessionManager.m in Sources */,
+				677648EC1D1389260070147A /* AFHTTPSessionManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,9 +856,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				677648F31D1389260070147A /* AFURLRequestSerialization.m in Sources */,
 				67728AAD1D0FF5C30006C90B /* ChatLog.c in Sources */,
 				67CEFFDA1D05624D0023ADB8 /* ViewController.m in Sources */,
+				677648D91D129A390070147A /* Common.m in Sources */,
+				677648F91D1389260070147A /* AFURLSessionManager.m in Sources */,
+				677648F61D1389260070147A /* AFURLResponseSerialization.m in Sources */,
+				677648ED1D1389260070147A /* AFNetworkReachabilityManager.m in Sources */,
+				677648F01D1389260070147A /* AFSecurityPolicy.m in Sources */,
+				67500E611D13AE4800BF1B52 /* Lang_ZH.m in Sources */,
+				677648EA1D1389260070147A /* AFHTTPSessionManager.m in Sources */,
 				67CEFFD71D05624D0023ADB8 /* main.m in Sources */,
+				67500E591D138A5300BF1B52 /* NetWork.m in Sources */,
 				67CEFFD41D05624D0023ADB8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,12 +887,22 @@
 				67CE001D1D05635D0023ADB8 /* Server.c in Sources */,
 				67560CAF1D126F7F00FB9AFA /* redisClient.c in Sources */,
 				67728A7A1D0FE5F50006C90B /* mongoClient.c in Sources */,
+				67560CB61D128F0B00FB9AFA /* Login.m in Sources */,
 				67CE00021D0562A40023ADB8 /* ViewController.m in Sources */,
+				677648EB1D1389260070147A /* AFHTTPSessionManager.m in Sources */,
+				67500E5B1D138A5800BF1B52 /* NetWork.m in Sources */,
 				67728A801D0FE6400006C90B /* cJSON.c in Sources */,
+				677648EE1D1389260070147A /* AFNetworkReachabilityManager.m in Sources */,
 				67728A8B1D0FE9240006C90B /* Marcos.c in Sources */,
 				67728A8E1D0FE9E40006C90B /* JSONDefine.c in Sources */,
+				677648FA1D1389260070147A /* AFURLSessionManager.m in Sources */,
+				67500E621D13AE4800BF1B52 /* Lang_ZH.m in Sources */,
+				677648F71D1389260070147A /* AFURLResponseSerialization.m in Sources */,
 				67728AAE1D0FF5C30006C90B /* ChatLog.c in Sources */,
 				67CEFFFF1D0562A40023ADB8 /* main.m in Sources */,
+				677648F41D1389260070147A /* AFURLRequestSerialization.m in Sources */,
+				677648F11D1389260070147A /* AFSecurityPolicy.m in Sources */,
+				677648DA1D129A390070147A /* Common.m in Sources */,
 				67728A811D0FE6400006C90B /* cJSON_Utils.c in Sources */,
 				67CEFFFC1D0562A40023ADB8 /* AppDelegate.m in Sources */,
 			);
@@ -944,6 +1171,7 @@
 		};
 		67CEFFEF1D05624E0023ADB8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E21900651B8EDA47F971D2E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -956,6 +1184,7 @@
 		};
 		67CEFFF01D05624E0023ADB8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25416EEADE2094041E65660C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;

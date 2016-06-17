@@ -66,7 +66,7 @@ int initSocket()
     return 0;
 };
 
-int sendMsg(char * msg)
+int sendMsg(const char * msg)
 {
     if (sock == -1) {
         CHAT_LOG(FILENAME, 62, LogLevel[4], 1, "socket not init");

@@ -654,8 +654,10 @@
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="621" y="343" width="250" height="300"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="250" height="300"/>
+                        <value key="maxSize" type="size" width="250" height="300"/>
                     </window>
                     <connections>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
@@ -669,30 +671,85 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llK-Y2-iUQ">
-                                <rect key="frame" x="143" y="189" width="120" height="40"/>
-                                <buttonCell key="cell" type="squareTextured" title="点击我" bezelStyle="texturedSquare" image="E556790C-563F-47DE-9545-3A1FBC12E3D0" imagePosition="overlaps" alignment="center" borderStyle="border" inset="2" id="e5b-xR-oEN">
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PiJ-w3-7mD">
+                                <rect key="frame" x="85" y="170" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="G9F-o5-05e"/>
+                                    <constraint firstAttribute="height" constant="80" id="hD4-GI-lkq"/>
+                                </constraints>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="test" id="f2h-Bw-uXb"/>
+                            </imageView>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="8qY-MK-Ntp">
+                                <rect key="frame" x="15" y="120" width="220" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="rUF-Sb-ife"/>
+                                </constraints>
+                                <textFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" alignment="left" drawsBackground="YES" usesSingleLineMode="YES" id="XMq-Tj-aO2">
+                                    <font key="font" metaFont="systemLight" size="18"/>
+                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                </textFieldCell>
+                            </textField>
+                            <secureTextField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kWF-KM-HcS">
+                                <rect key="frame" x="15" y="90" width="220" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4qK-cZ-tgq"/>
+                                </constraints>
+                                <secureTextFieldCell key="cell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" drawsBackground="YES" usesSingleLineMode="YES" id="mCw-hM-unl">
+                                    <font key="font" metaFont="systemLight" size="18"/>
+                                    <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </secureTextFieldCell>
+                            </secureTextField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="llK-Y2-iUQ">
+                                <rect key="frame" x="15" y="38" width="220" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="BPO-vJ-W8P"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="登陆" bezelStyle="texturedSquare" image="146149A5-4765-469F-A4D1-CF64BE2FDBCD" imagePosition="overlaps" alignment="center" state="on" borderStyle="border" inset="2" id="e5b-xR-oEN">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" size="16" name=".PingFangSC-Regular"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="btnClick:" target="XfG-lQ-9wD" id="oSM-7T-oCO"/>
+                                    <action selector="login:" target="XfG-lQ-9wD" id="SSy-Uo-GBc"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="8qY-MK-Ntp" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="0yC-7k-k7j"/>
+                            <constraint firstAttribute="trailing" secondItem="llK-Y2-iUQ" secondAttribute="trailing" constant="15" id="ADU-Qx-4j8"/>
+                            <constraint firstItem="kWF-KM-HcS" firstAttribute="top" secondItem="8qY-MK-Ntp" secondAttribute="bottom" constant="5" id="DxG-HX-v3e"/>
+                            <constraint firstItem="8qY-MK-Ntp" firstAttribute="top" secondItem="PiJ-w3-7mD" secondAttribute="bottom" constant="25" id="ESU-s7-DHy"/>
+                            <constraint firstItem="kWF-KM-HcS" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="Mq8-PR-tT6"/>
+                            <constraint firstItem="llK-Y2-iUQ" firstAttribute="top" secondItem="kWF-KM-HcS" secondAttribute="bottom" constant="15" id="RSt-YA-JVd"/>
+                            <constraint firstAttribute="trailing" secondItem="8qY-MK-Ntp" secondAttribute="trailing" constant="15" id="X1i-Um-hF0"/>
+                            <constraint firstAttribute="trailing" secondItem="kWF-KM-HcS" secondAttribute="trailing" constant="15" id="bBb-yd-zcO"/>
+                            <constraint firstItem="llK-Y2-iUQ" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="gaT-P7-mex"/>
+                            <constraint firstItem="PiJ-w3-7mD" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="50" id="ryE-il-FGu"/>
+                            <constraint firstItem="PiJ-w3-7mD" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="wc3-ho-Wa9"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="headerView" destination="PiJ-w3-7mD" id="ASp-fe-I0z"/>
+                        <outlet property="loginBtn" destination="llK-Y2-iUQ" id="eSB-6w-1fV"/>
+                        <outlet property="password" destination="kWF-KM-HcS" id="cgD-Di-R8t"/>
+                        <outlet property="username" destination="8qY-MK-Ntp" id="b6I-fG-cpw"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="73.5" y="697.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="E556790C-563F-47DE-9545-3A1FBC12E3D0" width="1" height="1">
+        <image name="146149A5-4765-469F-A4D1-CF64BE2FDBCD" width="1" height="1">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -743,5 +800,6 @@ ALAAswC1ALcAuQC7AMAA1wDZANsJiwmQCZsJpAm3CbsJxgnPCdQJ3AnfCeQJ8wn3Cf4KBgoTChgKGgoc
 CiEKKQosCjEKOQo8Ck4KUQpWAAAAAAAAAgEAAAAAAAAAQQAAAAAAAAAAAAAAAAAAClg
 </mutableData>
         </image>
+        <image name="test" width="177" height="177"/>
     </resources>
 </document>
