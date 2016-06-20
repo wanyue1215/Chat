@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "MainWindowController.h"
 
-
+#define     LOGIN_URL         "http://www.test.com/Api/login"
 
 //@import AFNetworking;
 
@@ -20,9 +21,6 @@
 @property (weak) IBOutlet NSButton *loginBtn;
 
 @end
-
-#define     LOGIN_URL         "http://www.test.com/Api/login"
-
 
 
 @implementation ViewController
@@ -52,11 +50,19 @@ CALayer * bglayer;
         NSNumber* status = [responseObject valueForKey:@"status"];
         if (status == [NSNumber numberWithUnsignedInt:200]) {
             
+            
+//            MainWindowController*mainWindowCont =  [[MainWindowController alloc] init];
             NSStoryboard * sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
-            SplitController* con = [sb instantiateControllerWithIdentifier:@"mainController"];
-            con.view.bounds = CGRectMake(0, 0, 800, 600);
+            MainWindowController* mainWindowCont = [sb instantiateControllerWithIdentifier:@"mainWindowController"];
+            
+            
+//            SplitController* con = [sb instantiateControllerWithIdentifier:@"mainController"];
+//            con.view.bounds = CGRectMake(0, 0, 800, 600);
             [[NSApplication sharedApplication].keyWindow close];
-            [self presentViewControllerAsModalWindow:con];
+            
+            [NSApp runModalForWindow:mainWindowCont.window];
+//            [mainWindowCont showWindow:NULL];
+//            [self presentViewControllerAsModalWindow:con];
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

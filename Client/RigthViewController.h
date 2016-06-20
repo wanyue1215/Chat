@@ -7,7 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <ContactsUI/ContactsUI.h>
 
-@interface RigthViewController : NSViewController
+@interface RigthViewController : CNContactViewController
 
 @end

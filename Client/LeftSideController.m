@@ -7,6 +7,7 @@
 //
 
 #import "LeftSideController.h"
+#import "CellView.h"
 
 @interface LeftSideController ()<NSTableViewDelegate,NSTableViewDataSource>
 //@property (weak) IBOutlet NSScrollView *scollView;
@@ -47,15 +48,20 @@
 {
     return 60;
 };
-- (nullable id)tableView:(NSTableView *)tableView objectValueForTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row
+
+- (nullable NSView *)tableView:(NSTableView *)tableView viewForTableColumn:(nullable NSTableColumn *)tableColumn row:(NSInteger)row NS_AVAILABLE_MAC(10_7)
 {
-    NSTableCellView *cell = [[NSTableCellView alloc] init];
-    NSButton* btn = [[NSButton alloc] initWithFrame:NSRectFromCGRect(CGRectMake(0, 0, 100, 50))];
-    btn.title = @"test";
-    [cell addSubview:btn];
+//    NSString * identifier = [tableColumn identifier];
+//    if([identifier isEqualToString:@"MainCell"]){
+    CellView* cell = [tableView makeViewWithIdentifier:@"MainCell" owner:self];
+    cell.nameView.stringValue = @"xxx";
     return cell;
+//    } else  {
+//        return [[NSTableCellView alloc] init];
+//    }
 };
 
 @end
+
 
 

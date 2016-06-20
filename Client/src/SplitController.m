@@ -7,6 +7,7 @@
 //
 
 #import "SplitController.h"
+#import <ContactsUI/ContactsUI.h>
 
 @interface SplitController ()<NSSplitViewDelegate>
 
