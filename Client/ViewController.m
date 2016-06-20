@@ -7,12 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "Common.h"
-#include "ChatLog.h"
-#include "client.h"
-#include "Login.h"
-#import "AFNetworking.h"
-#import "Lang_ZH.h"
+
+
+
+//@import AFNetworking;
 
 @interface ViewController ()<NSTextFieldDelegate>
 
@@ -33,7 +31,6 @@ CALayer * bglayer;
 
 - (IBAction)login:(id)sender {
     
-    
     if ([_username.stringValue  isEqual: @""] || [_password.stringValue isEqualToString:@""]) {
         return;
     }
@@ -41,25 +38,61 @@ CALayer * bglayer;
     [params setObject:_username.stringValue forKey:@"uname"];
     [params setObject:_password.stringValue forKey:@"upassword"];
     
-    NSMutableURLRequest *requestSerializer = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:@LOGIN_URL parameters:params error:NULL];
-    AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
+//    NSMutableURLRequest *requestSerializer = [[AFHTTPRequestSerializer serializer] requestWithMethod:@"POST" URLString:@LOGIN_URL parameters:params error:NULL];
+//    AFJSONResponseSerializer *responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
     
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-    manager.responseSerializer = responseSerializer;
-    
-    NSURLSessionDataTask* task = [manager dataTaskWithRequest:requestSerializer uploadProgress:NULL downloadProgress:NULL completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
-        if (error) {
-            NSLog(@"出错%@",error);
-        } else {
-            NSLog(@"%@",responseObject);
-            NSNumber* num = [responseObject objectForKey:@"status"];
-            if (num == [NSNumber numberWithInt:200]) {
-                //成功；
-                
-            }
+    //NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+//    manager.responseSerializer = responseSerializer;
+    NSURLSessionDataTask* task = [manager POST:@LOGIN_URL parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        NSLog(@"%@",responseObject);
+        
+        NSNumber* status = [responseObject valueForKey:@"status"];
+        if (status == [NSNumber numberWithUnsignedInt:200]) {
+            
+            NSStoryboard * sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+            SplitController* con = [sb instantiateControllerWithIdentifier:@"mainController"];
+            con.view.bounds = CGRectMake(0, 0, 800, 600);
+            [[NSApplication sharedApplication].keyWindow close];
+            [self presentViewControllerAsModalWindow:con];
         }
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        NSLog(@"%@",error);
     }];
+    
+//    
+//    AFURLSessionManager *manager = [[AFHTTPSessionManager alloc] initWithSessionConfiguration:configuration];
+//    manager.responseSerializer = responseSerializer;
+//    
+//    NSURLSessionDataTask* task = [manager dataTaskWithRequest:requestSerializer uploadProgress:NULL downloadProgress:NULL completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
+//        if (error) {
+//            NSLog(@"出错%@",error);
+//        } else {
+//            NSLog(@"%@",responseObject);
+//            
+//            
+//            
+////            NSDictionary* dic = (NSDictionary*)responseObject;
+////            [dic objectForKey:@"msg"];
+//            NSLog(@"xx");
+//            
+////            [NSDictionary dictionaryWithObject:responseObject forKey:]
+//            
+////            NSNumber* num = [responseObject objectForKey:@"status"];
+////            if (num == [NSNumber numberWithInt:200]) {
+////                
+////                NSStoryboard * sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
+////                NSWindowController* controller = [sb instantiateControllerWithIdentifier:@"mainWindow"];
+//////                [self presentViewControllerAsSheet:controller];
+////                
+////                //成功；
+////                [NSApplication.sharedApplication addWindowsItem:controller.window title:@"window" filename:YES] ;
+////            }
+//        }
+//    }];
     [task resume];
 }
 
