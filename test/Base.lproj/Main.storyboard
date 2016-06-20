@@ -642,67 +642,87 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="test" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="184" y="-12"/>
+            <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
-                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
-                        <segue destination="wzI-vL-xGu" kind="relationship" relationship="window.shadowedContentViewController" id="A9K-Us-p2V"/>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="225"/>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="y1K-mq-jLq">
+            <objects>
+                <windowController storyboardIdentifier="mainWindowController" id="VzL-Ww-iJf" customClass="MainWindowController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="vZI-X0-tjh">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" fullSizeContentView="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="1734" y="297" width="480" height="270"/>
+                        <rect key="screenRect" x="1440" y="-65" width="1920" height="1177"/>
+                    </window>
+                    <connections>
+                        <segue destination="wYz-y3-ORj" kind="relationship" relationship="window.shadowedContentViewController" id="SFP-R4-wmv"/>
+                    </connections>
+                </windowController>
+                <customObject id="vay-Xe-qAC" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="250"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="oHA-qb-c2V">
+        <scene sceneID="Oqa-Es-rIs">
             <objects>
-                <viewController id="wzI-vL-xGu" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" id="Kyk-Rs-k8b">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                <viewController id="wYz-y3-ORj" sceneMemberID="viewController">
+                    <view key="view" id="ng1-gs-O7N">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </view>
+                </viewController>
+                <customObject id="YgD-I8-Bpz" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="689" y="664"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2DL-Qp-oL7">
-                                <rect key="frame" x="191" y="188" width="81" height="32"/>
-                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KsY-uP-QoY">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MbI-8o-wun">
+                                <rect key="frame" x="200" y="143" width="81" height="32"/>
+                                <buttonCell key="cell" type="push" title="Button" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="CwV-0v-QIP">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="touch:" target="XfG-lQ-9wD" id="hXJ-PN-2dw"/>
+                                    </connections>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="test:" target="wzI-vL-xGu" id="SuM-7i-znw"/>
-                                    <segue destination="Rqy-ZX-b0H" kind="popover" popoverAnchorView="2DL-Qp-oL7" popoverBehavior="t" preferredEdge="maxY" id="sch-fJ-5GJ"/>
+                                    <segue destination="VzL-Ww-iJf" kind="show" id="8my-19-HLG"/>
                                 </connections>
                             </button>
                         </subviews>
                     </view>
                 </viewController>
-                <customObject id="6fU-HT-Wyt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="217" y="682"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Bx1-nC-da3">
-            <objects>
-                <viewController storyboardIdentifier="viewCon" id="Rqy-ZX-b0H" sceneMemberID="viewController">
-                    <view key="view" id="jl6-vK-mit">
-                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="31X-AV-Izh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="738" y="682"/>
+            <point key="canvasLocation" x="75" y="655"/>
         </scene>
     </scenes>
 </document>

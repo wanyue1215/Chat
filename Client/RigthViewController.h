@@ -7,8 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <ContactsUI/ContactsUI.h>
 
-@interface RigthViewController : CNContactViewController
+@interface RigthViewController : NSViewController
+
+@property (weak) IBOutlet NSView *headerView;
+
+@property (weak) IBOutlet NSTableView *tableView;
 
 @end

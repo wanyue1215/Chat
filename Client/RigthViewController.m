@@ -8,7 +8,7 @@
 
 #import "RigthViewController.h"
 
-@interface RigthViewController ()
+@interface RigthViewController ()<NSTableViewDelegate,NSTableViewDataSource>
 
 @end
 
@@ -16,8 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.view.frame = CGRectMake(0, 0, 600, 200);
+    self.view.frame = CGRectMake(0, 0, 600, 600);
+
 }
+
+-(void)viewDidAppear {
+    
+    self.headerView.layer.borderWidth = 1;
+    self.headerView.layer.borderColor = [NSColor lightGrayColor].CGColor;
+
+}
+
+
+
 
 @end
