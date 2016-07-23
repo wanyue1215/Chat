@@ -16,6 +16,7 @@
 #import "Lang_ZH.h"
 
 #import "SplitController.h"
+#import "ApiUrl.h"
 
 @interface ViewController : NSViewController
 

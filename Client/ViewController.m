@@ -29,6 +29,10 @@ CALayer * bglayer;
 
 - (IBAction)login:(id)sender {
     
+    
+    [self qqLogin];
+    return;
+    
     if ([_username.stringValue  isEqual: @""] || [_password.stringValue isEqualToString:@""]) {
         return;
     }
@@ -50,19 +54,30 @@ CALayer * bglayer;
         NSNumber* status = [responseObject valueForKey:@"status"];
         if (status == [NSNumber numberWithUnsignedInt:200]) {
             
+            //连接连接服务器
+            int i = initSocket();
+            NSMutableDictionary* dic = [[NSMutableDictionary alloc] init];
             
-//            MainWindowController*mainWindowCont =  [[MainWindowController alloc] init];
+            if(i < 0){
+                NSLog(@"连接服务器失败");
+                return;
+            }
+            
+            
+            //            MainWindowController*mainWindowCont =  [[MainWindowController alloc] init];
             NSStoryboard * sb = [NSStoryboard storyboardWithName:@"Main" bundle:nil];
             MainWindowController* mainWindowCont = [sb instantiateControllerWithIdentifier:@"mainWindowController"];
             
             
-//            SplitController* con = [sb instantiateControllerWithIdentifier:@"mainController"];
-//            con.view.bounds = CGRectMake(0, 0, 800, 600);
+            //            SplitController* con = [sb instantiateControllerWithIdentifier:@"mainController"];
+            //            con.view.bounds = CGRectMake(0, 0, 800, 600);
+            
+            //            [self presentViewControllerAsModalWindow:con];
+            
             [[NSApplication sharedApplication].keyWindow close];
             
             [NSApp runModalForWindow:mainWindowCont.window];
-//            [mainWindowCont showWindow:NULL];
-//            [self presentViewControllerAsModalWindow:con];
+
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -100,6 +115,29 @@ CALayer * bglayer;
 //        }
 //    }];
     [task resume];
+}
+
+
+-(void)qqLogin {
+    [self getQRCode];
+}
+
+//获取二维码
+-(void)getQRCode {
+    CHAT_LOG(@"login".UTF8String , 0, LogLevel[1], 1, "获取二维码");
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    
+    NSURL *URL = [NSURL URLWithString:[ApiUrl sharedManager].GET_QR_CODE.url];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    
+    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
+        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
+        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
+    } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
+        NSLog(@"File downloaded to: %@", filePath);
+    }];
+    [downloadTask resume];
 }
 
 - (void)viewDidLoad {
